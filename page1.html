@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 1</title>
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.5rem;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      display: flex;
+      height: calc(100vh - 70px);
+    }
+    .box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+    }
+    .left {
+      background: lightblue;
+    }
+    .right {
+      background: lightgreen;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="box.html">Page 1</a>
+    <a href="box.html" class="new">Page 2</a>
+  </header>
+
+  <div class="container">
+    <div class="box left"></div>
+    <div class="box right"></div>
+  </div>
+
+</body>
+</html>
